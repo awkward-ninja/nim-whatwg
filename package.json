@@ -1,0 +1,13 @@
+{
+  "name": "idl2nim",
+  "version": "0.0.0",
+  "description": "Convert WebIDL modules into Nim modules",
+  "dependencies": {
+    "jsdom": "^11.1.0",
+    "webidl2": "^4.1.0"
+  },
+  "scripts": {
+    "build": "node . 2> dist/build.log",
+    "test": "cd test && nim js -o:main.js main.nim"
+  }
+}
